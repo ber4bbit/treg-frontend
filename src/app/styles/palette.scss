@@ -1,0 +1,27 @@
+:root {
+    /** Black palette */
+    --black-900: #2d2d2d;
+    --black-400: #4b4b4b;
+    --black-300: #8a8a8a;
+    --black-100: #f5f6f8;
+
+    /** Blue palette */
+    --blue-900: #002dcb;
+    --blue-100: #e8f1fe;
+    
+    /** Lavender palette */
+    --lavender-500: #7983a6;
+
+    /** Orange palette */
+    --orange-900: #ff7a02;
+
+    /** Beije palette */
+    --beije-900: #ebe6d6;
+
+    /** Green palette */
+    --green-700: #60885c;
+
+    /** Gradients */
+    --blue-pink-gradient: linear-gradient(-45deg,#002dcb,#ed8af3,#002dcb,#ed8af3);
+    --red-gradient: linear-gradient(180deg,#be1622,#e94e1b);
+}
