@@ -1,0 +1,28 @@
+/** Shared classes */
+
+.container {
+    position: relative;
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    @media (max-width: 1230px) {
+        max-width: 1022px;
+    }
+
+    @media (max-width: 1022px) {
+        max-width: 798px;
+    }
+
+    @media (max-width: 798px) {
+        max-width: 606px;
+    }
+
+    @media (max-width: 606px) {
+        max-width: 405px;
+    }
+}
+
+/** Shared text classes */
+

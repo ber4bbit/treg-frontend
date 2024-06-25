@@ -1,4 +1,5 @@
-@use './palette.scss';
+@use './colors/palette.scss';
+@use './shared.scss';
 
 * {
     box-sizing: border-box;
@@ -9,14 +10,30 @@
 a {
     text-decoration: none;
     color: black;
+
+    &:hover {
+        @media (min-width: 1230px) {
+            cursor: pointer;
+        }
+    }
 }
 
 button {
     display: flex;
     background-color: unset;
     border: unset;
+
+    &:hover {
+        @media (min-width: 1230px) {
+            cursor: pointer;
+        }
+    }
 }
 
 section {
     padding: 40px 0;
+}
+
+main {
+    padding-top: 56px;
 }

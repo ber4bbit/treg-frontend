@@ -1,12 +1,12 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 
 
 const Home = (): ReactElement => {
 	return (
-		<section>
-			<button>hello</button>
-		</section>
+		<main>
+			<a>hello</a>
+		</main>
 	)
-}
+};
 
 export default Home;

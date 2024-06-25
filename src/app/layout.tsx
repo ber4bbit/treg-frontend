@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactElement } from "react";
+import Header from "./components/widgets/Header/Header";
 import "./styles/globals.scss";
 
 export const metadata: Metadata = {
@@ -13,6 +14,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }): ReactElement =
     return (
         <html lang="en">
             <body>
+                <Header />
                 {children}
             </body>
         </html>
