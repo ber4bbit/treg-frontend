@@ -1,0 +1,1 @@
+export { UILinkVariantsEnum } from './ui-types'

@@ -1,0 +1,8 @@
+.bubble {
+    padding: 14px 34px;
+    width: max-content;
+    background-color: var(--black-100);
+    color: var(--black-900);
+    border-radius: 36px;
+    transition: color .45s, background-color .45s;
+}
