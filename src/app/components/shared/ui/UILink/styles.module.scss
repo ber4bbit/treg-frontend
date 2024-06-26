@@ -1,8 +1,65 @@
 .bubble {
     padding: 14px 34px;
+    display: flex;
     width: max-content;
     background-color: var(--black-100);
     color: var(--black-900);
+    border: 1px solid transparent;
     border-radius: 36px;
-    transition: color .45s, background-color .45s;
+    transition: color .45s, background-color .45s, border-color .45s;
+
+    &:hover {
+        @media (min-width: 1230px) {
+            color: white;
+            background-color: var(--blue-900);
+        }
+    }
+
+    &_blue {
+        padding: 14px 34px;
+        background-color: var(--blue-900);
+        color: white;
+        display: flex;
+        width: max-content;
+        border: 1px solid transparent;
+        border-radius: 36px;
+        transition: color .45s, background-color .45s, border-color .45s;
+
+        &:hover {
+            @media (min-width: 1230px) {
+                color: var(--blue-900);
+                background-color: white;
+            }
+        }
+    }
+
+    &_ghost {
+        background-color: transparent;
+        color: var(--blue-900);
+        padding: 14px 34px;
+        display: flex;
+        width: max-content;
+        border: 1px solid transparent;
+        border-radius: 36px;
+        transition: color .45s, background-color .45s, border-color .45s;
+
+        &:hover {
+            border-color: var(--blue-900);
+        }
+    }
+
+    &_ghost-dashed {
+        background-color: transparent;
+        color: var(--blue-900);
+        padding: 14px 34px;
+        display: flex;
+        width: max-content;
+        border: 1px dashed transparent;
+        border-radius: 36px;
+        transition: color .45s, background-color .45s, border-color .45s;
+
+        &:hover {
+            border-color: var(--blue-900);
+        }
+    }
 }

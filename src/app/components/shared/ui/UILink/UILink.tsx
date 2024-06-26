@@ -1,25 +1,38 @@
-import React, {ReactElement} from 'react';
+import React from 'react';
 import styles from './styles.module.scss';
-import { UILinkVariantsEnum } from "@/app/shared/types";
+import type { ReactElement } from 'react';
+import type { UILinkPropsInterface } from "@/app/shared/types";
 
-interface UILinkPropsInterface {
-    link: string,
-    children: ReactElement | string,
-    variant?: UILinkVariantsEnum,
-    // TODO: Fix any
-    className?: any
-}
-
-const UiLink = (props: UILinkPropsInterface) => {
-    const {link, children, className, variant} = props;
+const UiLink = (props: UILinkPropsInterface): ReactElement => {
+    const { link, children, className, variant } = props;
 
     return (
-        <a
-            href={link}
-            className={variant ? className + ' ' + styles[variant] : className}
-        >
-            {children}
-        </a>
+        className && !variant ?
+            <a
+                href={link}
+                className={className + ' text-sm'}
+            >
+                {children}
+            </a>
+            : !className && variant ?
+                <a
+                    href={link}
+                    className={styles[variant] + ' text-sm'}
+                >
+                    {children}
+                </a>
+                : className && variant ?
+                    <a
+                        href={link}
+                        className={className + ' ' + styles[variant] + ' text-sm'}
+                    >
+                        {children}
+                    </a>
+                    :
+                    <a
+                        href={link}
+                        className={'text-sm'}
+                    >{children}</a>
     );
 };
 
