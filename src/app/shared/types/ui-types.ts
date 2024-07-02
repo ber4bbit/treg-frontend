@@ -9,10 +9,17 @@ export enum UILinkVariantsEnum {
     SimpleGray = 'simple_gray',
 }
 
-export interface UILinkPropsInterface {
+export interface UILinkPropsI {
     link: string,
+    linkType: 'external' | 'internal',
     children: ReactElement | string,
     variant?: UILinkVariantsEnum,
     // TODO: Fix any
     className?: any
+}
+
+export interface UIDropdownPropsI {
+    dropdownHeader: ReactElement | string,
+    dropdownContent: ReactElement | string,
+    type: 'active_on_hover' | 'active_on_click'
 }

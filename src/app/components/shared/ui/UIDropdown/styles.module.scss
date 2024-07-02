@@ -1,0 +1,35 @@
+.dropdown {
+
+    &__wrapper {
+        display: grid;
+        grid-template-rows: 0;
+        overflow: hidden;
+        transition: grid-template-rows .45s;
+    }
+
+    &__content {
+        min-height: 0;
+    }
+}
+
+.dropdown_hover {
+
+    &__wrapper {
+        display: grid;
+        grid-template-rows: 0;
+        overflow: hidden;
+        transition: grid-template-rows .45s;
+    }
+
+    &__content {
+        min-height: 0;
+    }
+
+    &:hover {
+        .dropdown_hover {
+            &__wrapper {
+                grid-template-rows: 1fr;
+            }
+        }
+    }
+}

@@ -1,8 +1,8 @@
 import type { ReactElement } from "react";
-import React from "react";
-import styles from "./styles.module.scss";
-import UILink from "@/app/components/shared/ui/UILink/UILink";
 import { UILinkVariantsEnum } from "@/app/shared/types";
+import React from "react";
+import UILink from "@/app/components/shared/ui/UILink/UILink";
+import styles from "./styles.module.scss";
 
 interface HeaderNavigationItemPropsInterface {
     link: string,
@@ -17,6 +17,7 @@ const HeaderNavigationItem = (props: HeaderNavigationItemPropsInterface): ReactE
         <li className={styles.item}>
             <UILink
                 link={link}
+                linkType={'internal'}
                 className={className && className}
                 variant={UILinkVariantsEnum.Bubble}
             >{linkText}</UILink>
