@@ -1,21 +1,21 @@
 export const navigationLinks: {
-    link: string,
-    linkText: string
+    link: string;
+    linkText: string;
 }[] = [
     {
-        link: '#',
-        linkText: 'Портфолио'
+        link: "#",
+        linkText: "Портфолио",
     },
     {
-        link: '#',
-        linkText: 'Услуги'
+        link: "#",
+        linkText: "Услуги",
     },
     {
-        link: '#',
-        linkText: 'Отзывы'
+        link: "#",
+        linkText: "Отзывы",
     },
     {
-        link: '#',
-        linkText: 'Компания'
-    }
-]
+        link: "#",
+        linkText: "Компания",
+    },
+];

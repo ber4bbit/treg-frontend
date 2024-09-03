@@ -1,5 +1,5 @@
 import type { ReactElement } from "react";
-import { UILinkVariantsEnum } from "@/app/shared/types";
+import { UILinkVariantsEnum } from "@/app/components/shared/ui/UILink/UILink.types";
 import React from "react";
 import UILink from "@/app/components/shared/ui/UILink/UILink";
 import styles from "./styles.module.scss";

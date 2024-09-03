@@ -1,7 +1,8 @@
-import type { ReactElement } from 'react';
-import React from 'react';
-import styles from './styles.module.scss';
+import type { ReactElement } from "react";
+import React from "react";
+import styles from "./styles.module.scss";
 import HeaderNavigation from "@/app/components/widgets/Header/HeaderNavigation/HeaderNavigation";
+import Link from "next/link";
 
 const Header = (): ReactElement => {
     return (
@@ -12,7 +13,7 @@ const Header = (): ReactElement => {
                 </div>
             </div>
         </header>
-    )
+    );
 };
 
 export default Header;
