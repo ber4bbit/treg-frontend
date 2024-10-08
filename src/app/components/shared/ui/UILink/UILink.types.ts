@@ -12,7 +12,7 @@ export enum UILinkVariantsEnum {
 export interface UILinkPropsI {
     link: string,
     linkType: 'external' | 'internal',
-    children: ReactElement | string,
+    children: ReactElement | ReactElement[] | string,
     variant?: UILinkVariantsEnum,
     // TODO: Fix any
     className?: any

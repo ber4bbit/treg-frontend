@@ -30,7 +30,7 @@
         line-height: 19px;
     }
 
-    &_m {
+    &-m {
         font-size: 18px;
         line-height: 22px;
     }
@@ -43,6 +43,11 @@
     &-xl {
         font-size: 24px;
         line-height: 28px;
+    }
+
+    &-xxl {
+        font-size: 30px;
+        line-height: 42px;
     }
 }
 

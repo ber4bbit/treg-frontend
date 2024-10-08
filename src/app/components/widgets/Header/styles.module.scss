@@ -12,4 +12,15 @@
         display: flex;
         justify-content: space-between;
     }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        span {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
 }
